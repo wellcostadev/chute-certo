@@ -18,18 +18,97 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
 
 div#container {
-    width: 300px;
-    height: 400px;
+    width: 400px;
+    height: 500px;
     background-color: rgb(93, 104, 255);
-
+    
     display: flex;
     flex-flow: column wrap;
+    justify-content: center;
+
     gap: 5px;
     border: 2px solid white;
-    border-radius: 15%;
+    border-radius: 8%;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.519);
+}
+
+div h1 {
+    color: white;
+    font-size: 1.7em;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.417);
+    text-align: left;
+    padding: 10px 10px 5px 15px;
+    margin-top: 8px;
+}
+
+div p {
+    color: white;
+    font-size: 1.2em;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.417);
+    text-align: left;
+    padding: 15px;
+}
+
+p#tentativas {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+div#resposta {
+    width: 350px;
+    color: rgb(246, 192, 192);
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.417);
+    text-align: center;
+    font-size: 1.4em;
+    font-weight: bold;
+    border-radius: 20px;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+input {
+    width: 200px;
+    height: 50px;
+    margin: 0px auto;
+    border-radius: 15px;
+    text-align: center;
+}
+
+button {
+    width: 200px;
+    height: 50px;
+    margin: 0px auto;
+    border-radius: 15px;
+    text-align: center;
+    background-color: lightcoral;
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: lightgrey;
+    color: rgb(68, 68, 68);
+} 
+
+#dicas {
+    width: 350px;
+    color: white;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.417);
+    text-align: center;
+    font-size: 1.4em;
+    font-weight: bold;
 }

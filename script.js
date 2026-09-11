@@ -9,6 +9,12 @@ function atualizarTentativas(){
     document.getElementById('tentativas').textContent = `Você tem ${tentativas} tentativas`
 }
 
+// Limpa o campo e coloca o cursor de volta nele
+function limparFocoInput(campoChute) {
+    campoChute.value = ""          // Limpa o que foi digitado
+    campoChute.focus()             // Coloca o cursor de volta no campo automaticamente
+}
+
 function chutar(){
     if (jogoFinalizado) {
         return
@@ -34,11 +40,14 @@ function chutar(){
 
     } else if (palpite < numsecreto) {
         dicas.textContent = 'O número secreto é maior';
-
         verificarFimDeJogo(dicas, campoChute)
+
+        limparFocoInput(campoChute)
     } else {
         dicas.textContent = 'O número secreto é menor';
         verificarFimDeJogo(dicas, campoChute)
+
+        limparFocoInput(campoChute)
     }
 }
 
